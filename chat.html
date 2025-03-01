@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chayan Chat Box</title>
+</head>
+<body>
+    <div class="chat-container">
+        <div class="chat-header">Chayan</div>
+        <div class="chat-messages" id="chat-messages"></div>
+        <div class="chat-input">
+            <input type="text" id="user-input" placeholder="Talk to Chayan...">
+            <button type="button" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+
+    <!-- Local audio files (download these and place in your project folder) -->
+    <audio id="sendSound" preload="auto">
+        <source src="sounds/receieve.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+    <audio id="receiveSound" preload="auto">
+        <source src="sounds/receieve.mp3" type="audio/mp3">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+        
+</body>
+</html>
