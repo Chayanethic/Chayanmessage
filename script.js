@@ -2,7 +2,7 @@ const sendSound = document.getElementById('sendSound');
         const receiveSound = document.getElementById('receiveSound');
         
         // AI profile picture (Chayan)
-        const aiProfilePic = 'https://res.cloudinary.com/dnpudf84r/image/upload/w_1000,c_fill,ar_1:1,g_auto,r_max,bo_5px_solid_red,b_rgb:262c35/v1740855607/me_hlzzsv.jpg'; // Replace with Chayan's image URL
+        const aiProfilePic = 'https://images.vexels.com/media/users/3/137678/isolated/preview/cd52ed115a2c5a0992d7b23b7b3b0f53-logo-geometric-polygonal-stroke.png'; // Replace with Chayan's image URL
 
         // Add Enter key support
         document.getElementById('user-input').addEventListener('keypress', function(e) {
@@ -38,7 +38,7 @@ const sendSound = document.getElementById('sendSound');
             // Display typing effect
             const typingMessage = document.createElement('div');
             typingMessage.className = 'message ai typing';
-            typingMessage.textContent = 'Chayan is thinking...';
+            typingMessage.textContent = 'SmartQAI is thinking...';
             chatMessages.appendChild(typingMessage);
 
             // Smooth scroll to bottom
@@ -51,7 +51,7 @@ const sendSound = document.getElementById('sendSound');
             try {
                 let aiResponse;
                 if (message.toLowerCase() === 'hi' || message.toLowerCase() === 'hello') {
-                    aiResponse = { answer: 'Hello! How can Chayan assist you today?' };
+                    aiResponse = { answer: 'Hello! How can SmartQAI assist you today?' };
                 } else {
                     const response = await fetch('https://aimessage.vercel.app/ask', {
                         method: 'POST',
